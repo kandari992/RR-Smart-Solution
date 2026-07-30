@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RR Smart Solution - IT & Digital Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body { 
+      background: linear-gradient(-45deg, #004aad, #007bff, #00c6ff, #ff5722);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+      padding: 0 20px;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .marquee { background: #ff5722; color: white; padding: 8px 0; font-weight: 600; font-size: 14px; }
+    header { background: rgba(0,0,0,0.7); backdrop-filter: blur(10px); padding: 15px 0; position: sticky; top: 0; z-index: 999; margin: 0 -20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1200px; margin: auto; }
+    
+    /* LOGO BADA + ROUND KIYA */
+    .logo { display: flex; align-items: center; gap: 12px; color: white; font-size: 24px; font-weight: 700; text-decoration: none; }
+    .logo img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+    
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #00c6ff; transform: scale(1.1); }
+
+    .hero { 
+      text-align: center; 
+      padding: 160px 20px; 
+      color: white; 
+      max-width: 1200px;
+      margin: 30px auto;
+      border-radius: 20px;
+      background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=100');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    .hero h2 { font-size: 52px; margin-bottom: 15px; text-shadow: 2px 2px 10px #000; }
+    .hero p { font-size: 22px; margin-bottom: 30px; text-shadow: 1px 1px 5px #000; }
+    .btn { background: #ff5722; color: white; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; transition: 0.3s; display: inline-block; margin: 8px; }
+    .btn:hover { transform: scale(1.1); box-shadow: 0 0 20px #ff5722; }
+    .btn-whatsapp { background: #25D366; }
+    .btn-whatsapp:hover { box-shadow: 0 0 25px #25D366; }
+    .btn-blue { background: #004aad; }
+    .btn-blue:hover { box-shadow: 0 0 25px #004aad; }
+
+    section { padding: 70px 40px; max-width: 1200px; margin: 30px auto; background: rgba(255,255,255,0.97); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    h2 { text-align: center; margin-bottom: 40px; color: #004aad; font-size: 36px; }
+
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .card { background: white; padding: 30px; border-radius: 15px; text-align: center; transition: 0.3s; text-decoration: none; color: #333; display: block; }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .card i { font-size: 40px; color: #007bff; margin-bottom: 15px; }
+    .card p { color: #666; margin-top: 8px; }
+
+    .contact { background: rgba(233,242,255,0.95); }
+    .contact-form { max-width: 600px; margin: auto; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 14px; margin: 10px 0; border: 2px solid #ddd; border-radius: 10px; }
+
+    /* PAYMENT SECTION NAYA */
+    .payment-box {
+      background: linear-gradient(135deg, #e8f5e9, #d1ecf1);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      margin-top: 40px;
+      border: 2px dashed #28a745;
+    }
+    .payment-box img { width: 200px; border: 4px solid #28a745; border-radius: 15px; margin: 20px auto; }
+
+    footer { background: #000; color: white; text-align: center; padding: 25px; margin: 0 -20px; }
+    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; font-size:24px; z-index: 999; }
+  </style>
+</head>
+<body>
+
+  <div class="marquee">
+    <marquee>🎉 OFFERS: Website sirf ₹4999 me | Free Domain + Hosting 1 saal | Call: +91 9411597480 🎉</marquee>
+  </div>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="RR_Smart_Solution.png" alt="RR Logo">
+        RR Smart Solution
+      </a>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>RR Smart Solution</h2>
+    <p>Aapke Business ko Digital Banane ka Smart Solution</p>
+    <a href="#contact" class="btn"><i class="fa fa-rocket"></i> Abhi Shuru Karein</a>
+  </section>
+
+  <section id="about">
+    <h2>Hamare Baare Me</h2>
+    <p style="text-align:center; font-size: 18px; line-height: 1.8;">RR Smart Solution Kashipur, Uttarakhand ki ek leading IT company hai. Hum Website, App, Digital Marketing ki service dete hain.</p>
+  </section>
+
+  <section id="services">
+    <h2>Hamari Services</h2>
+    <div class="services">
+      <a href="website.html" class="card">
+        <i class="fa fa-globe"></i>
+        <h3>Website Development</h3>
+        <p>Responsive aur SEO friendly website</p>
+      </a>
+      <a href="app.html" class="card">
+        <i class="fa fa-mobile"></i>
+        <h3>App Development</h3>
+        <p>Android aur iOS ke liye App</p>
+      </a>
+      <a href="digital-marketing.html" class="card">
+        <i class="fa fa-bullhorn"></i>
+        <h3>Digital Marketing</h3>
+        <p>Facebook, Google Ads & SEO</p>
+      </a>
+      <a href="software.html" class="card">
+        <i class="fa fa-laptop-code"></i>
+        <h3>Software Solution</h3>
+        <p>Billing, ERP, CRM Software</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Karein</h2>
+    <p style="text-align:center;">
+      <b>Address:</b> RR Smart Solution, Kashipur - 244713, Uttarakhand <br>
+      <b>Phone:</b> +91 9411597480
+    </p>
+    <form class="contact-form" action="https://formsubmit.co/info@rrsmartsolution.com" method="POST">
+      <input type="text" name="name" placeholder="Aapka Naam" required>
+      <input type="email" name="email" placeholder="Aapka Email" required>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+      <button class="btn" type="submit" style="width:100%;">Message Bhejein</button>
+    </form>
+
+    <!-- PAYMENT SECTION ADD KIYA -->
+    <div class="payment-box">
+      <h2><i class="fa fa-credit-card"></i> Advance Payment Karein</h2>
+      <p>Booking confirm karne ke liye 50% advance pay karein</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9411597480@upi&pn=RR Smart Solution" alt="UPI QR Code">
+      <p><b>UPI ID:</b> kandari992-1@oksbi</p>
+      <a href="upi://pay?pa=9411597480@upi&pn=RR Smart Solution" class="btn btn-blue"><i class="fa fa-mobile"></i> UPI App Se Pay</a>
+      <a href="tel:+919411597480" class="btn"><i class="fa fa-phone"></i> Call Karein</a>
+      <a href="https://wa.me/919411597480" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+  </section>
+
+  <a href="https://wa.me/919411597480" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+  <footer>
+    <p>© 2026 RR Smart Solution | Designed by Rajendra Singh Kandari</p>
+  </footer>
+
+</body>
+</html>

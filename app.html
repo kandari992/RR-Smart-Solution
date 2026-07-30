@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing - RR Smart Solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body { 
+      background: linear-gradient(-45deg, #004aad, #007bff, #00c6ff, #ff5722);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      padding: 0 20px;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* HEADER */
+    header { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); padding: 15px 0; position: sticky; top: 0; z-index: 999; margin: 0 -20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1200px; margin: auto; }
+    .logo { display: flex; align-items: center; gap: 10px; color: white; font-size: 22px; font-weight: 700; }
+    .logo img { width: 45px; height: 45px; border-radius: 10px; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #ff5722; }
+
+    /* HERO SECTION */
+    .page-hero {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 90px 40px;
+      background: linear-gradient(rgba(255,87,34,0.85), rgba(0,74,173,0.85)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=100') center/cover;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .page-hero h1 { font-size: 48px; margin-bottom: 15px; }
+    .page-hero p { font-size: 20px; margin-bottom: 30px; }
+
+    /* MAIN CONTENT BOX */
+    .container { 
+      max-width: 1200px; 
+      margin: 30px auto; 
+      background: rgba(255,255,255,0.98); 
+      padding: 60px 50px; 
+      border-radius: 20px; 
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2); 
+    }
+    
+    h2 { color: #004aad; font-size: 32px; margin-bottom: 25px; text-align: center; }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .service-card {
+      background: linear-gradient(135deg, #f8f9ff, #e9f2ff);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      border-bottom: 4px solid #ff5722;
+      transition: 0.3s;
+    }
+    .service-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(255,87,34,0.2); }
+    .service-card i { font-size: 45px; color: #ff5722; margin-bottom: 15px; }
+    .service-card h3 { color: #004aad; margin-bottom: 10px; font-size: 22px; }
+
+    /* RESULTS SECTION */
+    .results {
+      background: #004aad;
+      color: white;
+      padding: 50px 30px;
+      border-radius: 15px;
+      margin: 40px 0;
+      text-align: center;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .stat-box h3 { font-size: 40px; color: #ffdd00; }
+    .stat-box p { font-size: 16px; }
+
+    /* PRICING PACKAGES */
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .package {
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .package:hover { border-color: #ff5722; transform: scale(1.05); }
+    .package h3 { color: #004aad; font-size: 24px; margin-bottom: 10px; }
+    .package .price { font-size: 36px; color: #ff5722; font-weight: 700; margin: 15px 0; }
+    .package ul { list-style: none; text-align: left; margin: 20px 0; }
+    .package ul li { padding: 8px 0; }
+    .package ul li i { color: #28a745; margin-right: 8px; }
+
+    /* CTA BUTTONS */
+    .cta { text-align: center; margin-top: 40px; }
+    .btn { 
+      background: #ff5722; 
+      color: white; 
+      padding: 16px 45px; 
+      border-radius: 50px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      font-size: 18px; 
+      display: inline-block;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.08); box-shadow: 0 0 25px #ff5722; }
+    .btn-whatsapp { background: #25D366; }
+    .btn-whatsapp:hover { box-shadow: 0 0 25px #25D366; }
+
+    footer { text-align: center; padding: 30px; color: white; margin: 0 -20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="RR_Smart_Solution.png" alt="RR Logo">
+        RR Smart Solution
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <h1><i class="fa fa-bullhorn"></i> Digital Marketing</h1>
+    <p>Aapke Business ko Online #1 Banane ka Solution</p>
+    <a href="#packages" class="btn">Packages Dekhein</a>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h2>Hum Aapka Business Kaise Badhayenge</h2>
+    <p style="text-align:center; font-size:18px; line-height:1.8; margin-bottom:40px;">
+      RR Smart Solution se aapko Google, Facebook, Instagram par zyada customer milenge. 
+      Hum data ke basis par ads chalate hain taaki har ₹ ka result mile.
+    </p>
+
+    <!-- SERVICES -->
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa fa-search"></i>
+        <h3>SEO Service</h3>
+        <p>Google me apni website ko Top 1 par rank karwaye</p>
+      </div>
+      <div class="service-card">
+        <i class="fab fa-google"></i>
+        <h3>Google Ads</h3>
+        <p>Turant customer laane ke liye paid ads chalaye</p>
+      </div>
+      <div class="service-card">
+        <i class="fab fa-facebook"></i>
+        <h3>Social Media Marketing</h3>
+        <p>Facebook aur Instagram par brand banaye</p>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-envelope"></i>
+        <h3>Email Marketing</h3>
+        <p>Customer ko direct offer aur update bhejein</p>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-video"></i>
+        <h3>Content Marketing</h3>
+        <p>Reels, Posts aur Blog se audience banaye</p>
+      </div>
+      <div class="service-card">
+        <i class="fa fa-chart-line"></i>
+        <h3>Analytics & Report</h3>
+        <p>Har mahine full report ke sath performance</p>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results">
+      <h2 style="color:white;">Hamare Results Bolte Hain</h2>
+      <div class="stats">
+        <div class="stat-box">
+          <h3>200+</h3>
+          <p>Business Grow Kiye</p>
+        </div>
+        <div class="stat-box">
+          <h3>500%</h3>
+          <p>Average ROI</p>
+        </div>
+        <div class="stat-box">
+          <h3>50K+</h3>
+          <p>Leads Generated</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PACKAGES -->
+    <h2 id="packages">Hamare Packages</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Starter Pack</h3>
+        <div class="price">₹4,999/Month</div>
+        <ul>
+          <li><i class="fa fa-check"></i> Facebook + Instagram Ads</li>
+          <li><i class="fa fa-check"></i> 10 Posts Design</li>
+          <li><i class="fa fa-check"></i> Basic SEO</li>
+          <li><i class="fa fa-check"></i> Monthly Report</li>
+        </ul>
+      </div>
+      <div class="package" style="border: 3px solid #ff5722;">
+        <h3>Business Pack 🔥</h3>
+        <div class="price">₹9,999/Month</div>
+        <ul>
+          <li><i class="fa fa-check"></i> Google + FB + Insta Ads</li>
+          <li><i class="fa fa-check"></i> 20 Posts + 4 Reels</li>
+          <li><i class="fa fa-check"></i> Advanced SEO</li>
+          <li><i class="fa fa-check"></i> Lead Generation</li>
+          <li><i class="fa fa-check"></i> Weekly Report</li>
+        </ul>
+      </div>
+      <div class="package">
+        <h3>Pro Pack</h3>
+        <div class="price">₹19,999/Month</div>
+        <ul>
+          <li><i class="fa fa-check"></i> Full Digital Marketing</li>
+          <li><i class="fa fa-check"></i> 30 Posts + 8 Reels</li>
+          <li><i class="fa fa-check"></i> Website SEO + Blog</li>
+          <li><i class="fa fa-check"></i> Email Marketing</li>
+          <li><i class="fa fa-check"></i> Dedicated Manager</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta" id="contact">
+      <a href="https://wa.me/919411597480" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Free Strategy Call</a>
+      <a href="index.html#contact" class="btn"><i class="fa fa-paper-plane"></i> Quote Maangein</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RR Smart Solution | Designed by Rajendra Singh Kandari</p>
+  </footer>
+
+</body>
+</html>

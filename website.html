@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Development - RR Smart Solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body { 
+      background: linear-gradient(-45deg, #004aad, #007bff, #00c6ff, #ff5722);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      padding: 0 20px;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* HEADER */
+    header { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); padding: 15px 0; position: sticky; top: 0; z-index: 999; margin: 0 -20px; }
+    nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1200px; margin: auto; }
+    .logo { display: flex; align-items: center; gap: 10px; color: white; font-size: 22px; font-weight: 700; }
+    .logo img { width: 45px; height: 45px; border-radius: 10px; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #00c6ff; }
+
+    /* HERO SECTION */
+    .page-hero {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 80px 40px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1920&q=100') center/cover;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .page-hero h1 { font-size: 48px; margin-bottom: 15px; }
+    .page-hero p { font-size: 20px; margin-bottom: 30px; }
+
+    /* MAIN CONTENT BOX */
+    .container { 
+      max-width: 1200px; 
+      margin: 30px auto; 
+      background: rgba(255,255,255,0.98); 
+      padding: 60px 50px; 
+      border-radius: 20px; 
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2); 
+    }
+    
+    h2 { color: #004aad; font-size: 32px; margin-bottom: 25px; text-align: center; }
+
+    /* FEATURES GRID */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .feature-box {
+      background: #f8f9ff;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 5px solid #007bff;
+      transition: 0.3s;
+    }
+    .feature-box:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,123,255,0.2); }
+    .feature-box i { font-size: 35px; color: #007bff; margin-bottom: 15px; }
+    .feature-box h3 { color: #333; margin-bottom: 10px; }
+
+    /* PLATFORM BOX */
+    .platforms {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+    .platform {
+      text-align: center;
+      padding: 20px;
+    }
+    .platform i { font-size: 60px; color: #004aad; }
+
+    /* PRICING */
+    .pricing {
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .pricing h3 { font-size: 28px; margin-bottom: 10px; }
+    .price { font-size: 50px; font-weight: 700; color: #ffdd00; }
+
+    /* CTA BUTTONS */
+    .cta { text-align: center; margin-top: 40px; }
+    .btn { 
+      background: #ff5722; 
+      color: white; 
+      padding: 16px 45px; 
+      border-radius: 50px; 
+      text-decoration: none; 
+      font-weight: bold; 
+      font-size: 18px; 
+      display: inline-block;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.08); box-shadow: 0 0 25px #ff5722; }
+    .btn-whatsapp { background: #25D366; }
+    .btn-whatsapp:hover { box-shadow: 0 0 25px #25D366; }
+
+    footer { text-align: center; padding: 30px; color: white; margin: 0 -20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="RR_Smart_Solution.png" alt="RR Logo">
+        RR Smart Solution
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <h1><i class="fa fa-mobile"></i> App Development</h1>
+    <p>Aapke Business ke liye Android + iOS App banwaye</p>
+    <a href="#contact" class="btn">Free Consultation Lein</a>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h2>Hum Kaise App Banate Hain</h2>
+    <p style="text-align:center; font-size:18px; line-height:1.8; margin-bottom:40px;">
+      RR Smart Solution aapke idea ko Play Store aur App Store tak pahunchati hai. 
+      Hum fast, secure aur user-friendly mobile apps banate hain jo aapke customer badhayenge.
+    </p>
+
+    <!-- PLATFORMS -->
+    <div class="platforms">
+      <div class="platform">
+        <i class="fab fa-android"></i>
+        <h3>Android App</h3>
+      </div>
+      <div class="platform">
+        <i class="fab fa-apple"></i>
+        <h3>iOS App</h3>
+      </div>
+      <div class="platform">
+        <i class="fa fa-layer-group"></i>
+        <h3>Hybrid App</h3>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <h2>App Me Kya Milega</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <i class="fa fa-bolt"></i>
+        <h3>Fast & Smooth</h3>
+        <p>High speed performance wali app jo hang nahi hogi</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa fa-shield-alt"></i>
+        <h3>Secure & Safe</h3>
+        <p>User data 100% secure aur encrypted rahega</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa fa-paint-brush"></i>
+        <h3>Modern UI/UX</h3>
+        <p>Attractive design jo customer ko pasand aaye</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa fa-bell"></i>
+        <h3>Push Notification</h3>
+        <p>Customer tak direct offer aur update bhejein</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa fa-shopping-cart"></i>
+        <h3>Payment Gateway</h3>
+        <p>UPI, Card, Wallet sab integrate kar denge</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa fa-headset"></i>
+        <h3>1 Saal Support</h3>
+        <p>App launch ke baad free maintenance</p>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="pricing">
+      <h3>App Development Shuru</h3>
+      <div class="price">₹14,999</div>
+      <p>Basic App + Play Store Upload + 1 Year Support</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta" id="contact">
+      <a href="https://wa.me/919411597480" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Karein</a>
+      <a href="tel:+919411597480" class="btn"><i class="fa fa-phone"></i> Call Karein</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 RR Smart Solution | Designed by Rajendra Singh Kandari</p>
+  </footer>
+
+</body>
+</html>

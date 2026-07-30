@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Software Pro - RR Smart Solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{font-family:'Poppins',sans-serif; scroll-behavior:smooth;}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    
+    body{background:linear-gradient(-45deg,#004aad,#007bff,#00c6ff,#ff5722);background-size:400% 400%;animation:gradientBG 15s ease infinite;padding:0 20px;}
+    @keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    
+    .container{max-width:1200px;margin:30px auto;background:rgba(255,255,255,0.98);padding:60px 50px;border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.2)}
+    h1{color:#004aad;text-align:center;font-size:40px; margin-bottom:10px}
+    .price-box{background:#004aad;color:white;padding:40px;border-radius:15px;text-align:center;margin:30px 0}
+    .price{font-size:50px;color:#ffdd00;font-weight:700}
+    .btn{background:#ff5722;color:white;padding:16px 45px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block;margin:10px; transition:0.3s}
+    .btn:hover{transform:scale(1.08)}
+    .btn-green{background:#28a745}
+    .btn-green:hover{box-shadow:0 0 25px #28a745}
+    ul{list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; margin:30px 0}
+    ul li{background:#f0f8ff; padding:15px; border-radius:10px; border-left:4px solid #28a745; font-size:16px}
+    
+    /* PAYMENT BOX */
+    .payment-area{background:#e8f5e9;color:#333;padding:40px;border-radius:15px;border:3px dashed #28a745;margin-top:30px; text-align:center}
+    .payment-area img{width:200px; border:4px solid #28a745; border-radius:15px; margin:20px 0}
+    .steps{background:#fff3cd; padding:15px; border-radius:10px; margin:20px 0; text-align:left}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa fa-cash-register"></i> Billing Software Pro</h1>
+    <p style="text-align:center;font-size:18px;">Dukaan, Retail, Kirana ke liye Full GST Billing Software</p>
+
+    <div class="price-box">
+      <h2>One Time Price</h2>
+      <div class="price">₹2,999</div>
+      <p>Lifetime License + 1 Saal Free Support + Installation</p>
+      
+      <!-- PAYMENT BUTTON -->
+      <a href="#payment" class="btn"><i class="fa fa-credit-card"></i> Buy Now & Get Download Link</a>
+      
+      <!-- DEMO DOWNLOAD -->
+      <a href="files/BillingSoftwareDemo.exe" class="btn btn-green" download>
+        <i class="fa fa-download"></i> Free Demo Download
+      </a>
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+      <li>✅ GST Bill Print with Logo</li>
+      <li>✅ Stock Management + Low Stock Alert</li>
+      <li>✅ Barcode & QR Code Support</li>
+      <li>✅ Daily/Monthly Sales Report</li>
+      <li>✅ Data Backup & Cloud Sync</li>
+      <li>✅ Multi-User Login</li>
+      <li>✅ 1 Saal Free Support</li>
+      <li>✅ Lifetime License</li>
+    </ul>
+
+    <!-- PAYMENT SECTION -->
+    <div id="payment" class="payment-area">
+      <h2 style="color:#004aad;"><i class="fa fa-shield"></i> Safe Payment Karke Full Version Lein</h2>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9411597480@upi&pn=RR Smart Solution&am=2999" alt="UPI QR">
+      <p><b>UPI ID:</b> 9411597480@upi | <b>Amount:</b> ₹2,999</p>
+      
+      <div class="steps">
+        <b>Payment kaise karein:</b><br>
+        <b>Step 1:</b> UPI App se ₹2,999 pay karein <br>
+        <b>Step 2:</b> Payment ka Screenshot is WhatsApp par bhejein: 
+        <a href="https://wa.me/919411597480?text=Payment%20Done%20for%20Billing%20Software%20Pro" target="_blank">9411597480</a>
+      </div>
+      
+      <p style="color:#28a745; font-weight:700; font-size:18px;">
+        ✅ Payment confirm hote hi 5 min me Google Drive Download Link + License Key WhatsApp par mil jayegi
+      </p>
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+      <a href="software.html" class="btn" style="background:#004aad;"><i class="fa fa-arrow-left"></i> Wapas Jao</a>
+    </div>
+  </div>
+</body>
+</html>
