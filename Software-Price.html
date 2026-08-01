@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Software Price List - RR Smart Solution</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+body{background:linear-gradient(-45deg,#004aad,#007bff,#00c6ff,#ff5722);background-size:400% 400%;animation:gradientBG 15s ease infinite;padding:20px}
+@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.header{text-align:center;color:white;margin:40px 0}
+.header h1{font-size:50px;font-weight:800;text-shadow:0 5px 20px rgba(0,0,0,0.3)}
+.header p{font-size:20px;margin-top:10px}
+
+.container{max-width:1400px;margin:0 auto 50px}
+.software-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px}
+
+.card{background:rgba(255,255,255,0.98);border-radius:20px;padding:30px;box-shadow:0 15px 40px rgba(0,0,0,0.2);transition:0.4s;border-top:5px solid #004aad}
+.card:hover{transform:translateY(-10px);box-shadow:0 25px 60px rgba(0,0,0,0.4)}
+.card-header{display:flex;align-items:center;gap:15px;margin-bottom:20px}
+.card-header i{font-size:40px;color:#004aad;background:#e3f2fd;padding:15px;border-radius:15px}
+.card-header h3{font-size:22px;color:#004aad;font-weight:700}
+.price{font-size:36px;color:#ff5722;font-weight:800;margin:15px 0}
+.price span{font-size:16px;color:#666;font-weight:400}
+.features{list-style:none;margin:20px 0}
+.features li{padding:8px 0;border-bottom:1px dashed #eee;font-size:15px}
+.features li i{color:#28a745;margin-right:8px}
+.btn-group{display:flex;gap:10px;margin-top:20px}
+.btn{flex:1;padding:14px;text-align:center;border-radius:50px;text-decoration:none;font-weight:700;font-size:15px;transition:0.3s}
+.btn-buy{background:linear-gradient(135deg,#004aad,#007bff);color:white}
+.btn-buy:hover{box-shadow:0 0 20px #007bff;transform:scale(1.05)}
+.btn-video{background:#ff0000;color:white}
+.btn-video:hover{box-shadow:0 0 20px #ff0000;transform:scale(1.05)}
+.badge{background:#ffdd00;color:#000;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:10px}
+
+.footer{text-align:center;margin:50px 0}
+.footer a{background:white;color:#004aad;padding:16px 45px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><i class="fa fa-box-open"></i> RR Smart Solution</h1>
+  <p>20+ Premium Software | One Time Payment | Lifetime License | 1 Saal Free Support</p>
+</div>
+
+<div class="container">
+  <div class="software-grid">
+
+    <!-- 1 -->
+    <div class="card"><span class="badge">BEST SELLER</span>
+      <div class="card-header"><i class="fa fa-cash-register"></i><h3>Billing Software</h3></div>
+      <div class="price">₹50,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> GST Bill + Barcode</li><li><i class="fa fa-check"></i> Stock + Sales Report</li><li><i class="fa fa-check"></i> Lifetime License</li></ul>
+      <div class="btn-group"><a href="billing-software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-billing" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 2 -->
+<div class="card"><span class="badge">BEST SELLER</span>
+      <div class="card-header"><i class="fa fa-book"></i><h3>Astrology Web Application</h3></div>
+      <div class="price">₹29,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Kundli/ Kundli Matching</li><li><i class="fa fa-check"></i> Horoscope</li><li><i class="fa fa-check"></i> Predictions</li></ul>
+      <div class="btn-group"><a href="Astrology-Web-Application.html" class="btn btn-buy">Buy Now</a><a href="https://kandari992.github.io/Priyadarshi/" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo Website</a></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-users"></i><h3>CRM Software</h3></div>
+      <div class="price">₹19,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Lead Management</li><li><i class="fa fa-check"></i> WhatsApp Integration</li><li><i class="fa fa-check"></i> Sales Pipeline</li></ul>
+      <div class="btn-group"><a href="CRM-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-crm" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-school"></i><h3>School Management</h3></div>
+      <div class="price">₹54,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Fees + Admission</li><li><i class="fa fa-check"></i> Attendance SMS</li><li><i class="fa fa-check"></i> Result + Marksheet</li></ul>
+      <div class="btn-group"><a href="School-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-school" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-hospital"></i><h3>Hospital Management</h3></div>
+      <div class="price">₹29,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Patient + OPD</li><li><i class="fa fa-check"></i> Billing + Pharmacy</li><li><i class="fa fa-check"></i> Lab + Report</li></ul>
+      <div class="btn-group"><a href="Hospital-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-hospital" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-utensils"></i><h3>Restaurant POS</h3></div>
+      <div class="price">₹24,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Table + KOT</li><li><i class="fa fa-check"></i> Billing + Menu</li><li><i class="fa fa-check"></i> Z-Report</li></ul>
+      <div class="btn-group"><a href="Restaurant-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-restaurant" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-pills"></i><h3>Pharmacy Software</h3></div>
+      <div class="price">₹24,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Medicine Stock</li><li><i class="fa fa-check"></i> Expiry Alert</li><li><i class="fa fa-check"></i> GST Billing</li></ul>
+      <div class="btn-group"><a href="Pharmacy-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-pharmacy" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-boxes"></i><h3>Inventory Software</h3></div>
+      <div class="price">₹49,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Stock In/Out</li><li><i class="fa fa-check"></i> Barcode Support</li><li><i class="fa fa-check"></i> Purchase Report</li></ul>
+      <div class="btn-group"><a href="Inventory-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-inventory" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-tshirt"></i><h3>Garment Software</h3></div>
+      <div class="price">₹24,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Size + Color Stock</li><li><i class="fa fa-check"></i> Bill + Barcode</li><li><i class="fa fa-check"></i> Sales Report</li></ul>
+      <div class="btn-group"><a href="Garment-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-garment" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-gem"></i><h3>Jewellery Software</h3></div>
+      <div class="price">₹19,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Gold + Silver Rate</li><li><i class="fa fa-check"></i> Making Charges</li><li><i class="fa fa-check"></i> Customer Ledger</li></ul>
+      <div class="btn-group"><a href="Jewellery-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-jewellery" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 11 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-dumbbell"></i><h3>Gym Management</h3></div>
+      <div class="price">₹25,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Member + Fees</li><li><i class="fa fa-check"></i> Attendance Biometric</li><li><i class="fa fa-check"></i> Diet Chart</li></ul>
+      <div class="btn-group"><a href="Gym-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-gym" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 12 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-hotel"></i><h3>Hotel Management</h3></div>
+      <div class="price">₹24,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Room Booking</li><li><i class="fa fa-check"></i> Billing + Restaurant</li><li><i class="fa fa-check"></i> Guest Report</li></ul>
+      <div class="btn-group"><a href="Hotel-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-hotel" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 13 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-cut"></i><h3>Salon Software</h3></div>
+      <div class="price">₹15,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Appointment</li><li><i class="fa fa-check"></i> Billing + Stock</li><li><i class="fa fa-check"></i> Customer History</li></ul>
+      <div class="btn-group"><a href="Salon-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-salon" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 14 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-calculator"></i><h3>Accounting Software</h3></div>
+      <div class="price">₹25,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Ledger + Journal</li><li><i class="fa fa-check"></i> GST Return</li><li><i class="fa fa-check"></i> Tally Export</li></ul>
+      <div class="btn-group"><a href="Accounting-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-accounting" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 15 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-money-check"></i><h3>Payroll Software</h3></div>
+      <div class="price">₹20,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Salary Slip</li><li><i class="fa fa-check"></i> PF + ESI</li><li><i class="fa fa-check"></i> Attendance</li></ul>
+      <div class="btn-group"><a href="Payroll-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-payroll" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 16 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-user-doctor"></i><h3>Clinic Management</h3></div>
+      <div class="price">₹25,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Patient Record</li><li><i class="fa fa-check"></i> Prescription</li><li><i class="fa fa-check"></i> Billing</li></ul>
+      <div class="btn-group"><a href="Clinic-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-clinic" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 17 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-house"></i><h3>Real Estate CRM</h3></div>
+      <div class="price">₹25,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Property Listing</li><li><i class="fa fa-check"></i> Lead Tracking</li><li><i class="fa fa-check"></i> Agreement</li></ul>
+      <div class="btn-group"><a href="Realestate-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-realestate" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 18 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-plane"></i><h3>Travel Agency Software</h3></div>
+      <div class="price">₹25,499 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Flight + Hotel Booking</li><li><i class="fa fa-check"></i> Ticket + Invoice</li><li><i class="fa fa-check"></i> Customer CRM</li></ul>
+      <div class="btn-group"><a href="Travel-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-travel" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 19 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-car"></i><h3>Garage Management Software</h3></div>
+      <div class="price">₹24,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Job Card</li><li><i class="fa fa-check"></i> Parts Stock</li><li><i class="fa fa-check"></i> Billing</li></ul>
+      <div class="btn-group"><a href="Garage-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-garage" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+
+    <!-- 20 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-book"></i><h3>Library Management Software</h3></div>
+      <div class="price">₹24,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Book Issue/Return</li><li><i class="fa fa-check"></i> Member Card</li><li><i class="fa fa-check"></i> Fine Report</li></ul>
+      <div class="btn-group"><a href="Library-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-library" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+ <!-- 21 -->
+    <div class="card">
+      <div class="card-header"><i class="fa fa-building"></i><h3>ERP Software</h3></div>
+      <div class="price">₹19,999 <span>/One Time</span></div>
+      <ul class="features"><li><i class="fa fa-check"></i> Accounts + Inventory</li><li><i class="fa fa-check"></i> HR + Payroll</li><li><i class="fa fa-check"></i> Multi Branch</li></ul>
+      <div class="btn-group"><a href="ERP-Software.html" class="btn btn-buy">Buy Now</a><a href="https://youtu.be/demo-erp" target="_blank" class="btn btn-video"><i class="fa fa-play"></i> Demo</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="software.html"><i class="fa fa-arrow-left"></i> Wapas Home Jao</a>
+</div>
+
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Software Pro - RR Smart Solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{font-family:'Poppins',sans-serif; scroll-behavior:smooth;}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    
+    body{background:linear-gradient(-45deg,#004aad,#007bff,#00c6ff,#ff5722);background-size:400% 400%;animation:gradientBG 15s ease infinite;padding:0 20px;}
+    @keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    
+    .container{max-width:1200px;margin:30px auto;background:rgba(255,255,255,0.98);padding:60px 50px;border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,0.2)}
+    h1{color:#004aad;text-align:center;font-size:40px; margin-bottom:10px}
+    .tagline{text-align:center;font-size:18px;color:#555;margin-bottom:20px}
+    .price-box{background:linear-gradient(135deg,#ff5722,#004aad);color:white;padding:40px;border-radius:15px;text-align:center;margin:30px 0}
+    .price{font-size:50px;color:#ffdd00;font-weight:700}
+    .btn{background:#ff5722;color:white;padding:16px 45px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;display:inline-block;margin:10px; transition:0.3s}
+    .btn:hover{transform:scale(1.08);box-shadow:0 0 25px #ff5722}
+    .btn-green{background:#28a745}
+    .btn-green:hover{box-shadow:0 0 25px #28a745}
+    
+    .features{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; margin:30px 0}
+    .features li{background:#f0f8ff; padding:15px; border-radius:10px; border-left:4px solid #28a745; font-size:16px; list-style:none}
+    .badge{background:#28a745;color:#fff;font-size:12px;padding:3px 8px;border-radius:5px;margin-left:8px}
+    
+    /* PAYMENT BOX */
+    .payment-area{background:#e8f5e9;color:#333;padding:40px;border-radius:15px;border:3px dashed #28a745;margin-top:30px; text-align:center}
+    .payment-area img{width:200px; border:4px solid #28a745; border-radius:15px; margin:20px 0}
+    .steps{background:#fff3cd; padding:15px; border-radius:10px; margin:20px 0; text-align:left}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}
+    .trust div{background:#fff;padding:10px;border-radius:10px;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa fa-cash-register"></i> Billing Software Pro</h1>
+    <p class="tagline">Dukaan, Retail, Kirana, Mobile Shop ke liye Full GST + Online Billing Software</p>
+
+    <div class="price-box">
+      <h2>One Time Price</h2>
+      <div class="price">₹50,999</div>
+      <p>Lifetime License + 1 Saal Free Support + Free Installation</p>
+      
+      <a href="#payment" class="btn"><i class="fa fa-credit-card"></i> Buy Now & Get Download Link</a>
+      <a href="files/BillingSoftwareDemo.exe" class="btn btn-green" download>
+        <i class="fa fa-download"></i> Free Demo Download
+      </a>
+    </div>
+
+    <h2><i class="fa fa-star"></i> Pro Features</h2>
+    <ul class="features">
+      <li>✅ GST Bill Print with Logo + Thermal Print <span class="badge">NEW</span></li>
+      <li>✅ Stock Management + Low Stock + Expiry Alert</li>
+      <li>✅ Barcode & QR Code Billing - Fast Scanning</li>
+      <li>✅ Online Billing + Mobile App Access <span class="badge">BEST</span></li>
+      <li>✅ WhatsApp Bill Send to Customer <span class="badge">HOT</span></li>
+      <li>✅ UPI / Card Payment Entry + Cash Book</li>
+      <li>✅ Customer Ledger + Due Reminder SMS</li>
+      <li>✅ Daily/Monthly Sales, Profit, GST Report</li>
+      <li>✅ E-Invoice + E-Way Bill Generation <span class="badge">NEW</span></li>
+      <li>✅ Data Backup + Google Drive Auto Sync</li>
+      <li>✅ Multi-User Login + Role Management</li>
+      <li>✅ You can get it modified according to your preferences. Additional charges may apply.</li>
+    </ul>
+
+    <!-- PAYMENT SECTION -->
+    <div id="payment" class="payment-area">
+      <h2 style="color:#004aad;"><i class="fa fa-shield"></i> 100% Safe Payment Karke Full Version Lein</h2>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9411597480@upi&pn=RR Smart Solution&am=50999" alt="UPI QR">
+      <p><b>UPI ID:</b> 9411597480@upi | <b>Amount:</b> ₹50,999</p>
+      
+      <div class="steps">
+        <b>Payment kaise karein:</b><br>
+        <b>Step 1:</b> UPI App se ₹50,999 pay karein <br>
+        <b>Step 2:</b> Payment ka Screenshot is WhatsApp par bhejein: 
+        <a href="https://wa.me/919411597480?text=Payment%20Done%20for%20Billing%20Software%20Pro" target="_blank">9411597480</a>
+      </div>
+
+      <div class="trust">
+        <div><i class="fa fa-bolt"></i> <b>5 Min Delivery</b><br>Link + License Key</div>
+        <div><i class="fa fa-headset"></i> <b>1 Saal Support</b><br>Free Help</div>
+        <div><i class="fa fa-shield-check"></i> <b>Lifetime License</b><br>No Renewal</div>
+      </div>
+      
+      <p style="color:#28a745; font-weight:700; font-size:18px;margin-top:20px;">
+        ✅ Payment confirm hote hi Google Drive Download Link + License Key WhatsApp par mil jayegi
+      </p>
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+      <a href="software.html" class="btn" style="background:#004aad;"><i class="fa fa-arrow-left"></i> Wapas Jao</a>
+    </div>
+  </div>
+</body>
+</html>
